@@ -1,13 +1,8 @@
+# Use the official PHP-Apache base image
+FROM php:8.2-apache
 
-# Use the official PHP image
-FROM php:8.2-cli
+# Copy f1.php into the Apache web root
+COPY f1.php /var/www/html/
 
-# Set the working directory inside the container
-WORKDIR /usr/src/app
-
-# Copy the PHP script into the container
-COPY index.php .
-
-# Command to run the PHP script
-CMD [ "f1", "./f1.php" ]
-
+# Expose port 80 (Apache)
+EXPOSE 80
