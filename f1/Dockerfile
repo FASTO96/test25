@@ -9,5 +9,5 @@ WORKDIR /usr/src/app
 COPY index.php .
 
 # Command to run the PHP script
-CMD [ "php", "./index.php" ]
+CMD [ "f1", "./f1.php" ]
 
