@@ -1,5 +1,4 @@
 <?php
-$result = 20 + 5;
-echo $result . "\n";
-echo "hello from fad\n";
-// add list
+// Add 9 + 1 and print the result
+$result = 9 + 1;
+echo $result;
